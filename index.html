@@ -1,47 +1,292 @@
-<div class="container py-5">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小西郁江｜Portfolio</title>
 
-  <h1 class="mb-2">小西郁江</h1>
-  <h4 class="text-muted mb-4">Ikuroko Translation & Web Design</h4>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <p class="lead">
-    Web制作・翻訳・開発スキルをまとめたポートフォリオサイトです。
-  </p>
+  <style>
+    /* サムネの見た目を安定させる（縦横比を揃える） */
+    .thumb {
+      width: 100%;
+      aspect-ratio: 4 / 3; /* お好みで 1/1 や 16/9 もOK */
+      object-fit: cover;
+      border-radius: .5rem;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+    }
+    .thumb:hover {
+      opacity: .92;
+    }
+  </style>
+</head>
 
-  <p class="text-muted">
-    This portfolio showcases my work in web design, translation, and development.
-  </p>
+<body class="bg-light">
+  <div class="container py-5">
 
-  <hr class="my-5">
+    <!-- Header -->
+    <header class="mb-4">
+      <h1 class="mb-1">小西郁江</h1>
+      <div class="text-muted">Ikue Konishi</div>
+      <h4 class="text-muted mt-3 mb-0">イクロコ翻訳デザイン</h4>
+      <div class="text-muted">Ikuroko Translation & Web Design</div>
 
-  <h2 class="mb-4">Projects</h2>
-
-  <!-- XClone -->
-  <div class="card mb-4">
-    <div class="card-body">
-      <h5 class="card-title">XClone (Laravel SNS App)</h5>
-      <p class="card-text">
-        Laravelを使用して作成したSNS風アプリ。
-        ログイン機能・投稿機能・フォロー機能を実装。
+      <p class="lead mt-4 mb-2">
+        Webデザイン・フロントエンド制作・翻訳の成果をまとめています。
       </p>
-      <a href="https://github.com/koniiiro/XClone" target="_blank" class="btn btn-outline-primary btn-sm">
-        View on GitHub
-      </a>
-    </div>
+      <p class="text-muted mb-0">
+        Portfolio website of Ikue Konishi. Web design, visual communication, and bilingual digital solutions.
+      </p>
+    </header>
+
+    <hr class="my-5" />
+
+    <!-- Projects -->
+    <section>
+      <h2 class="mb-4">Projects</h2>
+
+      <!-- Web制作 -->
+      <div class="mb-5">
+        <h3 class="h5 mb-3">🖥 Web制作</h3>
+
+        <!-- Banner -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <h5 class="card-title mb-1">Banner Design</h5>
+                <p class="text-muted mb-0">バナー制作：3案件 × 各3案</p>
+              </div>
+              <span class="badge text-bg-light border">Banner</span>
+            </div>
+
+            <hr class="my-3" />
+
+            <!-- 案件1 -->
+            <div class="mb-4">
+              <div class="fw-semibold mb-2">案件1（例）</div>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a href="#" title="案件1-案1（拡大表示リンクに差し替えOK）">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P1-1" alt="Banner Project1 Variation1">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件1-案2">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P1-2" alt="Banner Project1 Variation2">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件1-案3">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P1-3" alt="Banner Project1 Variation3">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 案件2 -->
+            <div class="mb-4">
+              <div class="fw-semibold mb-2">案件2（例）</div>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a href="#" title="案件2-案1">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P2-1" alt="Banner Project2 Variation1">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件2-案2">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P2-2" alt="Banner Project2 Variation2">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件2-案3">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P2-3" alt="Banner Project2 Variation3">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 案件3 -->
+            <div>
+              <div class="fw-semibold mb-2">案件3（例）</div>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a href="#" title="案件3-案1">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P3-1" alt="Banner Project3 Variation1">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件3-案2">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P3-2" alt="Banner Project3 Variation2">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="案件3-案3">
+                    <img class="thumb" src="https://placehold.co/600x450?text=Banner+P3-3" alt="Banner Project3 Variation3">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LP FV -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <h5 class="card-title mb-1">LP First View (FV)</h5>
+                <p class="text-muted mb-0">LPのFV：2案件 × 各3案</p>
+              </div>
+              <span class="badge text-bg-light border">FV</span>
+            </div>
+
+            <hr class="my-3" />
+
+            <!-- FV 案件1 -->
+            <div class="mb-4">
+              <div class="fw-semibold mb-2">案件1（例）</div>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a href="#" title="FV1-案1">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P1-1" alt="FV Project1 Variation1">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="FV1-案2">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P1-2" alt="FV Project1 Variation2">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="FV1-案3">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P1-3" alt="FV Project1 Variation3">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FV 案件2 -->
+            <div>
+              <div class="fw-semibold mb-2">案件2（例）</div>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a href="#" title="FV2-案1">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P2-1" alt="FV Project2 Variation1">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="FV2-案2">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P2-2" alt="FV Project2 Variation2">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" title="FV2-案3">
+                    <img class="thumb" src="https://placehold.co/600x450?text=FV+P2-3" alt="FV Project2 Variation3">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LP -->
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <h5 class="card-title mb-1">Landing Page</h5>
+                <p class="text-muted mb-0">LP：1件</p>
+              </div>
+              <span class="badge text-bg-light border">LP</span>
+            </div>
+
+            <hr class="my-3" />
+
+            <!-- LP 1件（3案ではなく1件なので、ここは1枚＋必要なら補足） -->
+            <div class="row g-2 align-items-start">
+              <div class="col-12 col-md-6">
+                <a href="#" title="LP（例）">
+                  <img class="thumb" src="https://placehold.co/800x600?text=LP+Preview" alt="Landing Page Preview">
+                </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="fw-semibold mb-2">概要（例）</div>
+                <p class="mb-2">
+                  LP全体の構成・情報設計・視線誘導を意識して制作。<br>
+                  <span class="text-muted">Designed with structure, hierarchy, and conversion-focused layout.</span>
+                </p>
+                <ul class="mb-0 text-muted">
+                  <li>目的：例）問い合わせ導線の明確化</li>
+                  <li>担当：例）デザイン / コーディング（必要なら）</li>
+                  <li>使用：例）Figma / Photoshop / Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 開発 -->
+      <div class="mt-5">
+        <h3 class="h5 mb-3">💻 開発</h3>
+
+        <div class="row g-3">
+          <!-- XClone -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-2">XClone</h5>
+                <p class="card-text">
+                  SNS風アプリ（学習制作）。ログイン・投稿・画像アップロード・いいね・フォロー・通知などを実装。<br />
+                  <span class="text-muted">SNS-style app (learning project) with auth, posts, likes, follows, and notifications.</span>
+                </p>
+                <a href="https://github.com/koniiiro/XClone" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laravel Todo -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Laravel Todo</h5>
+                <p class="card-text">
+                  Laravel10学習プロジェクト（Todoアプリ開発）。ルーティング、Blade、CRUDを中心に実装。<br />
+                  <span class="text-muted">Laravel 10 learning project (Todo app) focusing on routing, Blade, and CRUD.</span>
+                </p>
+                <a href="https://github.com/koniiiro/todo-laravel" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="my-5" />
+
+    <!-- Footer -->
+    <footer class="text-muted small">
+      <div>© <span id="year"></span> Ikue Konishi</div>
+    </footer>
   </div>
 
-  <!-- Todo App -->
-  <div class="card mb-4">
-    <div class="card-body">
-      <h5 class="card-title">Laravel Todo App</h5>
-      <p class="card-text">
-        Laravel10で作成中のTodoアプリ。
-        ルーティング、Blade、CRUD処理を実装中。
-      </p>
-      <a href="https://github.com/koniiiro/todo-laravel" target="_blank" class="btn btn-outline-primary btn-sm">
-        View on GitHub
-      </a>
-    </div>
-  </div>
-
-</div>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
