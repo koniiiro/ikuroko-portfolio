@@ -1,241 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>小西郁江｜Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* 画像を気持ちよく揃える */
-    .thumb {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: .5rem;
-      border: 1px solid rgba(0,0,0,.08);
-      background: #fff;
-    }
-    .thumb-sm {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: .5rem;
-      border: 1px solid rgba(0,0,0,.08);
-      background: #fff;
-    }
-    .card-title { margin-bottom: .25rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小西郁江 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-light">
-  <div class="container py-5">
-
-    <!-- Header -->
-    <h1 class="mb-2">小西郁江</h1>
-    <h4 class="text-muted mb-4">Ikuroko Translation & Web Design</h4>
-
-    <p class="lead mb-1">
-      Webデザイン・フロントエンド制作・翻訳の成果をまとめています。
-    </p>
-    <p class="text-muted">
-      Portfolio website of Ikue Konishi. Web design, visual communication, and bilingual digital solutions.
-    </p>
-
-    <hr class="my-5">
-
-    <h2 class="mb-4">Projects</h2>
-
-    <!-- =========================
-         Web制作
-    ========================== -->
-    <h3 class="h5 text-uppercase text-muted mb-3">Web制作</h3>
-
-    <!-- Banner card -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
-          <div>
-            <h5 class="card-title">Banners</h5>
-            <p class="card-text text-muted mb-2">3案件 × 各3案（代表1枚のみ表示）</p>
-          </div>
-
-          <!-- 折りたたみボタン -->
-          <button class="btn btn-outline-secondary btn-sm" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseBanners"
-                  aria-expanded="false" aria-controls="collapseBanners">
-            ほかの案を表示
-          </button>
+<body>
+    <!-- ヘッダー -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">小西郁江</h1>
+            <p class="hero-subtitle">Ikuroko Translation & Web Design</p>
+            <p class="hero-description">Webデザイン・フロントエンド制作・翻訳の成果をまとめています。</p>
+            <p class="hero-description-en">Portfolio website of Ikue Konishi. Web design, visual communication, and bilingual digital solutions.</p>
         </div>
+    </header>
 
-        <!-- 代表画像（クリックで原寸表示） -->
-        <a href="assets/web/banner/banner-buppan-01.jpg" target="_blank" rel="noopener">
-          <img class="thumb mt-2" src="assets/web/banner/banner-buppan-01.jpg" alt="Banner sample 1">
-        </a>
+    <!-- Web制作セクション -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Web制作</h2>
+            
+            <!-- Banners -->
+            <div class="project-block">
+                <h3 class="project-title">Banners</h3>
+                <p class="project-meta">3案件 × 各3案</p>
+                
+                <div class="card-grid">
+                    <!-- Banner 物販 -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="assets/web/banner/banner-buppan-01.jpg" target="_blank">
+                                <img src="assets/web/banner/banner-buppan-01.jpg" alt="Banner 物販">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">物販</span>
+                                <span class="badge">案1/3</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-text" onclick="showAlternatives('banner-buppan')">他の案を見る</button>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- 折りたたみ領域：残りの画像 -->
-        <div class="collapse mt-3" id="collapseBanners">
-          <div class="row g-3">
+                    <!-- Banner サービス -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="assets/web/banner/banner-service-01.jpg" target="_blank">
+                                <img src="assets/web/banner/banner-service-01.jpg" alt="Banner サービス">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">サービス</span>
+                                <span class="badge">案1/3</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-text" onclick="showAlternatives('banner-service')">他の案を見る</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- 物販 2,3 -->
-            <div class="col-12 col-md-4">
-              <a href="assets/web/banner/banner-buppan-02.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/banner/banner-buppan-02.jpg" alt="Banner buppan 02">
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/banner/banner-buppan-03.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/banner/banner-buppan-03.jpg" alt="Banner buppan 03">
-              </a>
+                <!-- 隠された代替案 - Banner 物販 -->
+                <div id="banner-buppan" class="alternatives hidden">
+                    <div class="alternatives-grid">
+                        <a href="assets/web/banner/banner-buppan-02.jpg" target="_blank">
+                            <img src="assets/web/banner/banner-buppan-02.jpg" alt="Banner 物販 02">
+                        </a>
+                        <a href="assets/web/banner/banner-buppan-03.jpg" target="_blank">
+                            <img src="assets/web/banner/banner-buppan-03.jpg" alt="Banner 物販 03">
+                        </a>
+                    </div>
+                    <button class="btn-text" onclick="hideAlternatives('banner-buppan')">閉じる</button>
+                </div>
+
+                <!-- 隠された代替案 - Banner サービス -->
+                <div id="banner-service" class="alternatives hidden">
+                    <div class="alternatives-grid">
+                        <a href="assets/web/banner/banner-service-02.jpg" target="_blank">
+                            <img src="assets/web/banner/banner-service-02.jpg" alt="Banner サービス 02">
+                        </a>
+                        <a href="assets/web/banner/banner-service-03.jpg" target="_blank">
+                            <img src="assets/web/banner/banner-service-03.jpg" alt="Banner サービス 03">
+                        </a>
+                    </div>
+                    <button class="btn-text" onclick="hideAlternatives('banner-service')">閉じる</button>
+                </div>
+
+                <!-- リンク（任意） -->
+                <div class="external-links">
+                    <a href="#" class="link">案件ページ（任意）</a>
+                    <a href="#" class="link">Figma/資料（任意）</a>
+                </div>
             </div>
 
-            <!-- サービス 1,2,3 -->
-            <div class="col-12 col-md-4">
-              <a href="assets/web/banner/banner-service-01.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/banner/banner-service-01.jpg" alt="Banner service 01">
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/banner/banner-service-02.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/banner/banner-service-02.jpg" alt="Banner service 02">
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/banner/banner-service-03.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/banner/banner-service-03.jpg" alt="Banner service 03">
-              </a>
+            <!-- LP First View -->
+            <div class="project-block">
+                <h3 class="project-title">LP First View (FV)</h3>
+                <p class="project-meta">2案件 × 各3案</p>
+                
+                <div class="card-grid">
+                    <!-- FV D-School -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="assets/web/fv/fv-dschool-01.jpg" target="_blank">
+                                <img src="assets/web/fv/fv-dschool-01.jpg" alt="FV D-School">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">D-School</span>
+                                <span class="badge">案1/3</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-text" onclick="showAlternatives('fv-dschool')">他の案を見る</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FV Golf -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="assets/web/fv/fv-golf-01.jpg" target="_blank">
+                                <img src="assets/web/fv/fv-golf-01.jpg" alt="FV Golf">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">Golf</span>
+                                <span class="badge">案1/3</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-text" onclick="showAlternatives('fv-golf')">他の案を見る</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 隠された代替案 - FV D-School -->
+                <div id="fv-dschool" class="alternatives hidden">
+                    <div class="alternatives-grid">
+                        <a href="assets/web/fv/fv-dschool-02.jpg" target="_blank">
+                            <img src="assets/web/fv/fv-dschool-02.jpg" alt="FV D-School 02">
+                        </a>
+                        <a href="assets/web/fv/fv-dschool-03.jpg" target="_blank">
+                            <img src="assets/web/fv/fv-dschool-03.jpg" alt="FV D-School 03">
+                        </a>
+                    </div>
+                    <button class="btn-text" onclick="hideAlternatives('fv-dschool')">閉じる</button>
+                </div>
+
+                <!-- 隠された代替案 - FV Golf -->
+                <div id="fv-golf" class="alternatives hidden">
+                    <div class="alternatives-grid">
+                        <a href="assets/web/fv/fv-golf-02.jpg" target="_blank">
+                            <img src="assets/web/fv/fv-golf-02.jpg" alt="FV Golf 02">
+                        </a>
+                        <a href="assets/web/fv/fv-golf-03.jpg" target="_blank">
+                            <img src="assets/web/fv/fv-golf-03.jpg" alt="FV Golf 03">
+                        </a>
+                    </div>
+                    <button class="btn-text" onclick="hideAlternatives('fv-golf')">閉じる</button>
+                </div>
+
+                <!-- リンク（任意） -->
+                <div class="external-links">
+                    <a href="#" class="link">案件ページ（任意）</a>
+                </div>
             </div>
 
-            <!-- 追加したい場合はここに増やす -->
-          </div>
+            <!-- Landing Page -->
+            <div class="project-block">
+                <h3 class="project-title">Landing Page</h3>
+                <p class="project-meta">LP：1件</p>
+                
+                <div class="card-grid">
+                    <div class="card card-large">
+                        <div class="card-image">
+                            <a href="assets/web/lp/lp-golf-pc.jpg" target="_blank">
+                                <img src="assets/web/lp/lp-golf-pc.jpg" alt="LP Golf">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">Golf LP</span>
+                                <span class="badge">PC版</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="link">公開URL（任意）</a>
+                                <a href="#" class="link">制作メモ（任意）</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- 外部リンク（任意） -->
-        <div class="mt-3 d-flex gap-2 flex-wrap">
-          <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">案件ページ（任意）</a>
-          <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">Figma/資料（任意）</a>
-        </div>
-      </div>
-    </div>
+    <!-- 開発セクション -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">開発</h2>
+            
+            <div class="dev-grid">
+                <!-- XClone -->
+                <div class="dev-card">
+                    <div class="dev-card-header">
+                        <h3 class="dev-card-title">XClone</h3>
+                        <span class="dev-badge">学習制作</span>
+                    </div>
+                    <p class="dev-card-description">
+                        SNS風アプリ。ログイン・投稿・画像アップロード・いいね・フォロー・通知などを実装。
+                    </p>
+                    <div class="dev-card-footer">
+                        <a href="https://github.com/koniiiro/XClone" target="_blank" class="btn-github">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
 
-    <!-- FV card -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
-          <div>
-            <h5 class="card-title">LP First View (FV)</h5>
-            <p class="card-text text-muted mb-2">2案件 × 各3案（代表1枚のみ表示）</p>
-          </div>
-          <button class="btn btn-outline-secondary btn-sm" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseFv"
-                  aria-expanded="false" aria-controls="collapseFv">
-            ほかの案を表示
-          </button>
-        </div>
-
-        <!-- 代表画像 -->
-        <a href="assets/web/fv/fv-dschool-01.jpg" target="_blank" rel="noopener">
-          <img class="thumb mt-2" src="assets/web/fv/fv-dschool-01.jpg" alt="FV sample">
-        </a>
-
-        <div class="collapse mt-3" id="collapseFv">
-          <div class="row g-3">
-            <!-- DSchool 2,3 -->
-            <div class="col-12 col-md-4">
-              <a href="assets/web/fv/fv-dschool-02.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/fv/fv-dschool-02.jpg" alt="FV dschool 02">
-              </a>
+                <!-- Laravel Todo -->
+                <div class="dev-card">
+                    <div class="dev-card-header">
+                        <h3 class="dev-card-title">Laravel Todo</h3>
+                        <span class="dev-badge dev-badge-wip">開発中</span>
+                    </div>
+                    <p class="dev-card-description">
+                        Laravel10の学習プロジェクト（Todoアプリ開発中）。ルーティング、Blade、CRUDなどを実装中。
+                    </p>
+                    <div class="dev-card-footer">
+                        <a href="https://github.com/koniiiro/todo-laravel" target="_blank" class="btn-github">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/fv/fv-dschool-03.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/fv/fv-dschool-03.jpg" alt="FV dschool 03">
-              </a>
-            </div>
-
-            <!-- Golf 1,2,3 -->
-            <div class="col-12 col-md-4">
-              <a href="assets/web/fv/fv-golf-01.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/fv/fv-golf-01.jpg" alt="FV golf 01">
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/fv/fv-golf-02.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/fv/fv-golf-02.jpg" alt="FV golf 02">
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="assets/web/fv/fv-golf-03.jpg" target="_blank" rel="noopener">
-                <img class="thumb-sm" src="assets/web/fv/fv-golf-03.jpg" alt="FV golf 03">
-              </a>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <div class="mt-3 d-flex gap-2 flex-wrap">
-          <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">案件ページ（任意）</a>
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ikue Konishi</p>
         </div>
-      </div>
-    </div>
-
-    <!-- LP card -->
-    <div class="card mb-5 shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Landing Page</h5>
-        <p class="card-text text-muted mb-2">LP：1件</p>
-
-        <!-- 代表画像（LPは1件なので折りたたみ不要） -->
-        <a href="assets/web/lp/lp-golf-pc.jpg" target="_blank" rel="noopener">
-          <img class="thumb mt-2" src="assets/web/lp/lp-golf-pc.jpg" alt="LP sample">
-        </a>
-
-        <div class="mt-3 d-flex gap-2 flex-wrap">
-          <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">公開URL（任意）</a>
-          <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">制作メモ（任意）</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- =========================
-         開発
-    ========================== -->
-    <h3 class="h5 text-uppercase text-muted mb-3">開発</h3>
-
-    <!-- XClone -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">XClone</h5>
-        <p class="card-text">
-           SNS風アプリ（学習制作）。ログイン・投稿・画像アップロード・いいね・フォロー・通知などを実装。
-        </p>
-        <a href="https://github.com/koniiiro/XClone" target="_blank" rel="noopener"
-           class="btn btn-outline-primary btn-sm">
-          View on GitHub
-        </a>
-      </div>
-    </div>
-
-    <!-- Laravel Todo -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Laravel Todo</h5>
-        <p class="card-text">
-          Laravel10の学習プロジェクト（Todoアプリ開発中）。ルーティング、Blade、CRUDなどを実装中。
-        </p>
-        <a href="https://github.com/koniiiro/todo-laravel" target="_blank" rel="noopener"
-           class="btn btn-outline-primary btn-sm">
-          View on GitHub
-        </a>
-      </div>
-    </div>
-
-    <footer class="text-center text-muted small py-4">
-      © Ikue Konishi
     </footer>
-  </div>
 
-  <!-- Bootstrap JS（折りたたみに必須） -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
