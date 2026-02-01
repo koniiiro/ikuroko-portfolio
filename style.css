@@ -1,0 +1,520 @@
+/* ========================================
+   CSS Variables - カラーパレット & フォント
+   ======================================== */
+:root {
+    /* Colors */
+    --color-bg-light: #fafaf9;
+    --color-bg-dark: #1c1917;
+    --color-text-primary: #1c1917;
+    --color-text-secondary: #57534e;
+    --color-text-light: #fafaf9;
+    --color-accent: #0a0a0a;
+    --color-border: #e7e5e4;
+    --color-card-bg: #ffffff;
+    --color-hover: #f5f5f4;
+    
+    /* Typography */
+    --font-display: 'Crimson Pro', serif;
+    --font-body: 'Noto Sans JP', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-light);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* ========================================
+   Container
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+    background: linear-gradient(to bottom, #ffffff 0%, var(--color-bg-light) 100%);
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xs);
+    line-height: 1.8;
+}
+
+.hero-description-en {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    max-width: 650px;
+    margin: 0 auto;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-description,
+    .hero-description-en {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.section-light {
+    background-color: var(--color-bg-light);
+}
+
+.section-dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.section-dark .section-title {
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* ========================================
+   Project Block
+   ======================================== */
+.project-block {
+    margin-bottom: var(--spacing-xl);
+}
+
+.project-block:last-child {
+    margin-bottom: 0;
+}
+
+.project-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 0.01em;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* ========================================
+   Card Grid
+   ======================================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 640px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   Card Styles
+   ======================================== */
+.card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.card-large {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: var(--color-bg-light);
+}
+
+.card-large .card-image {
+    height: 400px;
+}
+
+.card-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: var(--spacing-md);
+}
+
+.card-badges {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border-radius: 2px;
+}
+
+.card-actions,
+.card-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.btn-text {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.btn-text:hover {
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-text-primary);
+}
+
+.link {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: all 0.2s ease;
+}
+
+.link:hover {
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-text-primary);
+}
+
+/* ========================================
+   External Links
+   ======================================== */
+.external-links {
+    margin-top: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   Alternatives (Hidden Toggle Content)
+   ======================================== */
+.alternatives {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    animation: slideDown 0.3s ease-out;
+}
+
+.alternatives.hidden {
+    display: none;
+}
+
+.alternatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.alternatives-grid a {
+    display: block;
+}
+
+.alternatives-grid img {
+    width: 100%;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+}
+
+.alternatives-grid img:hover {
+    transform: scale(1.02);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   Development Cards (Dark Section)
+   ======================================== */
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.dev-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.dev-card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.dev-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.dev-card-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+.dev-badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-text-light);
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.dev-badge-wip {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+}
+
+.dev-card-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(250, 250, 249, 0.8);
+    margin-bottom: var(--spacing-md);
+}
+
+.dev-card-footer {
+    margin-top: var(--spacing-md);
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-github svg {
+    flex-shrink: 0;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-bg-light);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+@media (max-width: 640px) {
+    .card-image {
+        height: 200px;
+    }
+    
+    .card-large .card-image {
+        height: 300px;
+    }
+    
+    .dev-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .alternatives-grid {
+        grid-template-columns: 1fr;
+    }
+}
