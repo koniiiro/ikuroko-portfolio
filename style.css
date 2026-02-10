@@ -646,6 +646,8 @@ button {
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
+    justify-content: center;  /* ← 0210追加: 横方向中央揃え */
+    align-items: center;      /* ← 0210追加: 縦方向中央揃え */
 }
 
 .skill-tag {
