@@ -147,6 +147,10 @@ button {
     .hero-description-en {
         font-size: 0.9rem;
     }
+   .hero {
+    background-position: top; /* 上部を基準に表示 */
+    background-size: cover;
+}
 }
 
 /* ========================================
@@ -633,4 +637,21 @@ button {
     .translation-grid {
         grid-template-columns: 1fr;
     }
+}
+/* ========================================
+   Skill Section
+   ======================================== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
 }
