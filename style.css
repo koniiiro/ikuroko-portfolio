@@ -660,3 +660,56 @@ button {
     border: 1px solid #ddd;
     color: var(--color-text-primary); /* 変数を使用して統一感アップ */
 }
+
+/* ===== 学習歴 ===== */
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-item {
+    display: flex;
+    gap: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-period {
+    min-width: 160px;
+    font-size: 0.85rem;
+    color: #888;
+    padding-top: 4px;
+    white-space: nowrap;
+}
+
+.education-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}
+
+.education-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ===== Skillsブロック ===== */
+.skills-block {
+    margin-bottom: 20px;
+}
+
+.skills-category {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 8px;
+}
