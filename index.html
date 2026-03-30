@@ -25,7 +25,6 @@
         <div class="container">
             <h2 class="section-title">Skills</h2>
 
-            <!-- Web / IT -->
             <div class="skills-block">
                 <h3 class="skills-category">Web / IT</h3>
                 <p class="skills">
@@ -36,7 +35,6 @@
                 </p>
             </div>
 
-            <!-- 言語 -->
             <div class="skills-block">
                 <h3 class="skills-category">言語</h3>
                 <p class="skills">
@@ -44,7 +42,6 @@
                 </p>
             </div>
 
-            <!-- ビジネススキル -->
             <div class="skills-block">
                 <h3 class="skills-category">ビジネススキル</h3>
                 <p class="skills">
@@ -55,16 +52,15 @@
 
         </div>
     </section>
-    <!-- ▲▲ Skillsここまで ▲▲ -->
 
-    <!-- 開発セクション（Skillsの直後に移動） -->
+    <!-- 開発セクション -->
     <section class="section section-dark">
         <div class="container">
             <h2 class="section-title">開発</h2>
             
             <div class="dev-grid">
 
-                <!-- PayMatsuri（新規追加） -->
+                <!-- PayMatsuri -->
                 <div class="dev-card">
                     <div class="dev-card-header">
                         <h3 class="dev-card-title">PayMatsuri</h3>
@@ -84,6 +80,68 @@
                         <span class="tech-tag">Heroku</span>
                         <span class="tech-tag">JawsDB</span>
                     </div>
+
+                    {{-- スクリーンショットギャラリー --}}
+                    <div class="dev-card-screenshots">
+                        <div class="screenshot-grid">
+                            <a href="assets/web/app_paymatsuri/pm_login_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_login_pc.png" alt="ログイン画面（PC）">
+                                <span class="screenshot-label">ログイン（PC）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_login_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_login_sp.png" alt="ログイン画面（SP）">
+                                <span class="screenshot-label">ログイン（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_admin_dashboard_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_admin_dashboard_pc.png" alt="管理者ダッシュボード（PC）">
+                                <span class="screenshot-label">管理者ダッシュボード</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_admin_amount_input_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_admin_amount_input_pc.png" alt="金額入力画面（PC）">
+                                <span class="screenshot-label">金額入力</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_payment_result_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_payment_result_pc.png" alt="決済結果画面（PC）">
+                                <span class="screenshot-label">決済結果</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_customer_dashboard_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_customer_dashboard_sp.png" alt="顧客ダッシュボード（SP）">
+                                <span class="screenshot-label">顧客ダッシュボード（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_sign_up_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_sign_up_sp.png" alt="新規登録画面（SP）">
+                                <span class="screenshot-label">新規登録（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_qrcode_payment_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_qrcode_payment_sp.png" alt="QRコード決済画面（SP）">
+                                <span class="screenshot-label">QRコード決済（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_usage_log_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_usage_log_sp.png" alt="利用履歴（SP）">
+                                <span class="screenshot-label">利用履歴（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_add_point_sp.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_add_point_sp.png" alt="ポイント追加（SP）">
+                                <span class="screenshot-label">ポイント追加（SP）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_users_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_users_pc.png" alt="ユーザー一覧（PC）">
+                                <span class="screenshot-label">ユーザー一覧（PC）</span>
+                            </a>
+                            <a href="assets/web/app_paymatsuri/pm_detailed_sales_report_pc.png" target="_blank">
+                                <img src="assets/web/app_paymatsuri/pm_detailed_sales_report_pc.png" alt="売上レポート（PC）">
+                                <span class="screenshot-label">売上レポート（PC）</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- デモアカウント情報 -->
+                    <div class="dev-card-demo">
+                        <p class="demo-title">【デモ用アカウント】</p>
+                        <p class="demo-info">管理者：admin@example.com　/ password</p>
+                        <p class="demo-info">一般ユーザー：taro@example.com　/ password</p>
+                    </div>
+
                     <div class="dev-card-footer">
                         <a href="https://paymatsuri-65a68b85dc7c.herokuapp.com/" target="_blank" class="btn-github">
                             デモを見る
@@ -116,14 +174,16 @@
                     </div>
                 </div>
 
-                <!-- Laravel Todo -->
+                <!-- Laravel Todo：「開発中」→「学習制作」に変更 -->
                 <div class="dev-card">
                     <div class="dev-card-header">
                         <h3 class="dev-card-title">Laravel Todo</h3>
-                        <span class="dev-badge dev-badge-wip">開発中</span>
+                        <!-- 「開発中」→「学習制作」に変更 -->
+                        <!-- <span class="dev-badge dev-badge-wip">開発中</span> -->
+                        <span class="dev-badge">学習制作</span>
                     </div>
                     <p class="dev-card-description">
-                        Laravel10の学習プロジェクト（Todoアプリ開発中）。ルーティング、Blade、CRUDなどを実装中。
+                        Laravel10の学習プロジェクト（Todoアプリ）。ルーティング、Blade、CRUDなどを実装。
                     </p>
                     <div class="dev-card-footer">
                         <a href="https://github.com/koniiiro/todo-laravel" target="_blank" class="btn-github">
@@ -149,7 +209,6 @@
                 <p class="project-meta">3案件 × 各3案</p>
                 
                 <div class="card-grid">
-                    <!-- Banner 物販 -->
                     <div class="card">
                         <div class="card-image">
                             <a href="assets/web/banner/banner-buppan-01.jpg" target="_blank">
@@ -167,7 +226,6 @@
                         </div>
                     </div>
 
-                    <!-- Banner サービス -->
                     <div class="card">
                         <div class="card-image">
                             <a href="assets/web/banner/banner-service-01.jpg" target="_blank">
@@ -186,7 +244,6 @@
                     </div>
                 </div>
 
-                <!-- 隠された代替案 - Banner 物販 -->
                 <div id="banner-buppan" class="alternatives hidden">
                     <div class="alternatives-grid">
                         <a href="assets/web/banner/banner-buppan-02.jpg" target="_blank">
@@ -199,7 +256,6 @@
                     <button class="btn-text" onclick="hideAlternatives('banner-buppan')">閉じる</button>
                 </div>
 
-                <!-- 隠された代替案 - Banner サービス -->
                 <div id="banner-service" class="alternatives hidden">
                     <div class="alternatives-grid">
                         <a href="assets/web/banner/banner-service-02.jpg" target="_blank">
@@ -212,7 +268,6 @@
                     <button class="btn-text" onclick="hideAlternatives('banner-service')">閉じる</button>
                 </div>
 
-                <!-- リンク（TODO） -->
                 <div class="external-links">
                     <a href="#" class="link">案件ページ（under construction）</a>
                     <a href="#" class="link">Figma/資料（under construction）</a>
@@ -225,7 +280,6 @@
                 <p class="project-meta">2案件 × 各3案</p>
                 
                 <div class="card-grid">
-                    <!-- FV D-School -->
                     <div class="card">
                         <div class="card-image">
                             <a href="assets/web/fv/fv-dschool-01.jpg" target="_blank">
@@ -243,7 +297,6 @@
                         </div>
                     </div>
 
-                    <!-- FV Golf -->
                     <div class="card">
                         <div class="card-image">
                             <a href="assets/web/fv/fv-golf-01.jpg" target="_blank">
@@ -262,7 +315,6 @@
                     </div>
                 </div>
 
-                <!-- 隠された代替案 - FV D-School -->
                 <div id="fv-dschool" class="alternatives hidden">
                     <div class="alternatives-grid">
                         <a href="assets/web/fv/fv-dschool-02.jpg" target="_blank">
@@ -275,7 +327,6 @@
                     <button class="btn-text" onclick="hideAlternatives('fv-dschool')">閉じる</button>
                 </div>
 
-                <!-- 隠された代替案 - FV Golf -->
                 <div id="fv-golf" class="alternatives hidden">
                     <div class="alternatives-grid">
                         <a href="assets/web/fv/fv-golf-02.jpg" target="_blank">
@@ -288,7 +339,6 @@
                     <button class="btn-text" onclick="hideAlternatives('fv-golf')">閉じる</button>
                 </div>
 
-                <!-- リンク（TODO） -->
                 <div class="external-links">
                     <a href="#" class="link">案件ページ（under construction）</a>
                 </div>
@@ -297,13 +347,15 @@
             <!-- Landing Page -->
             <div class="project-block">
                 <h3 class="project-title">Landing Page</h3>
-                <p class="project-meta">LP：1件</p>
+                <p class="project-meta">LP：2件</p>
                 
                 <div class="card-grid">
+
+                    <!-- Golf LP PC版 -->
                     <div class="card card-large">
                         <div class="card-image">
                             <a href="assets/web/lp/lp-golf-pc.jpg" target="_blank">
-                                <img src="assets/web/lp/lp-golf-pc.jpg" alt="LP Golf">
+                                <img src="assets/web/lp/lp-golf-pc.jpg" alt="LP Golf PC">
                             </a>
                         </div>
                         <div class="card-content">
@@ -311,13 +363,47 @@
                                 <span class="badge">Golf LP</span>
                                 <span class="badge">PC版</span>
                             </div>
+                            <div class="card-actions">
+                                <button class="btn-text" onclick="showAlternatives('lp-golf')">SP版を見る</button>
+                            </div>
                             <div class="card-links">
                                 <a href="#" class="link">公開URL（under construction）</a>
                                 <a href="#" class="link">制作メモ（under construction）</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- D-School LP -->
+                    <div class="card card-large">
+                        <div class="card-image">
+                            <a href="assets/web/lp/lp-dschool-sp.jpg" target="_blank">
+                                <img src="assets/web/lp/lp-dschool-sp.jpg" alt="LP D-School SP">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-badges">
+                                <span class="badge">D-School LP</span>
+                                <span class="badge">SP版</span>
+                            </div>
+                            <div class="card-links">
+                                <!-- WordPressリンク追加 -->
+                                <a href="https://xs377755.xsrv.jp/lp/kadai/" target="_blank" class="link">WordPress公開ページを見る</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Golf LP SP版（隠し） -->
+                <div id="lp-golf" class="alternatives hidden">
+                    <div class="alternatives-grid">
+                        <a href="assets/web/lp/lp-golf-sp.jpg" target="_blank">
+                            <img src="assets/web/lp/lp-golf-sp.jpg" alt="LP Golf SP">
+                        </a>
+                    </div>
+                    <button class="btn-text" onclick="hideAlternatives('lp-golf')">閉じる</button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -335,7 +421,9 @@
                     <ul class="translation-list">
                         <li>日本人と外国人との三者間通訳</li>
                         <li>医療機関・公的機関・交通機関・ロードサービス等への電話通訳対応</li>
-            
+                        <li>110/119番通報・高速道路事故対応など緊急現場での即時通訳</li>
+                        <li>保険・車両構造・法的権利等の専門用語を正確に伝達</li>
+                        <li>100社以上の独自運用フローを把握・遵守</li>
                         <li>即時対応型のリアルタイム通訳経験</li>
                         <li>クレーム・緊急対応を含む実務通訳経験</li>
                     </ul>
@@ -344,6 +432,7 @@
                         <span class="strength-tag">正確性</span>
                         <span class="strength-tag">即応力</span>
                         <span class="strength-tag">情報整理力</span>
+                        <span class="strength-tag">リスク管理</span>
                     </div>
                 </div>
 
@@ -445,7 +534,6 @@
             </ul>
         </div>
     </section>
-    <!-- ▲▲ 学習歴ここまで ▲▲ -->
 
     <!-- フッター -->
     <footer class="footer">
