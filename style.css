@@ -780,6 +780,51 @@ button {
     }
 }
 
+/* ヘッダー用GitHubボタン */
+.btn-github-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+.btn-github-hero:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+/* Skillsセクション用GitHubボタン */
+.btn-github-skills {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    padding: 0.55rem 1.2rem;
+    background: #24292e;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: background 0.2s;
+}
+.btn-github-skills:hover {
+    background: #444d56;
+}
+
+/* バックエンド説明文の補足スタイル */
+.skills-note {
+    margin-top: 0.6rem;
+    color: #555;   /* section-lightなら濃いめでOK */
+    font-size: 0.93em;
+}
+
 /* ========================================
     Footer
     ======================================== */
@@ -821,6 +866,8 @@ button {
 }
 ```
 
+
+
 ---
 
 ## 追加したCSSまとめ
@@ -831,3 +878,5 @@ button {
 ・.screenshot-label　　　　　← 画像下のラベル
 ・.dev-card-demo / .demo-title ← デモ情報エリア
 ・.dev-card-footer　　　　　 ← フレックスに変更
+
+
